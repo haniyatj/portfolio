@@ -90,3 +90,9 @@ document.querySelectorAll(".project-card").forEach((card) => {
 //         heroContent.style.transform = `translateY(${scrolled * 0.5}px)`;
 //     }
 // });
+  document.querySelectorAll('.project-card').forEach(card => {
+    card.addEventListener('click', () => {
+      window.open(card.dataset.url, '_blank');
+    });
+    card.style.cursor = "pointer";
+  });
